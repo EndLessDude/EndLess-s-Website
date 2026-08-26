@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+/* hides unclciked hrefs*/
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+/* ------------------------------------------- */
+
+/* Nav Bar */ 
+body header nav {
+    height: 60px;
+    display: flex; /* Lines: 11-13 keep it on the right horizontally but centered vertically */
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    padding-right: 15px;;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+/* ------------------------------------------- */
+
+/* nav bar buttons for all 3 hrefs unclicked*/
+nav a[href="#home"] {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #000000;
+    padding: 4px;
+}
+
+nav a[href="#about"] {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #000000;
+    padding: 4px;
+}
+
+nav a[href="#projects"] {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #000000;
+    padding: 4px;
+}
+
+/* ------------------------------------------- */
+
+/* nav bar buttons for all 3 hrefs clicked*/
+nav a[href="#home"].active {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #ff0000;
+    padding: 4px;
+}
+
+nav a[href="#about"].active {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #ff0000;
+    padding: 4px;
+}
+
+nav a[href="#projects"].active {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #ff0000;
+    padding: 4px;
+}
+
+/* ------------------------------------------- */
+
+/* heading for all 3 pages */
+#home h1 {
+    font-size: xx-large;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+
+#about h1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+
+#projects h1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: red;
+}
+/* ------------------------------------------- */
+/* Home */
+
+#home h2 {
+    color:aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.home-buttons a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    height: 70px;
+    width: 260px;
+    background-color: rgb(156, 25, 25);
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+/* ------------------------------------------- */
+/* About Me */
+
+#about h2 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about p{
+    color: white;
+    text-align: center;
+    font-size: large;
+    max-width: 900px; /* To mak eit only 900 pixles wide*/
+    margin: 0 auto; /* To center the paragraph*/
+}
+
+#about h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-list img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.anime-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.anime-list img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.driver-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.driver-list img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+/* ------------------------------------------- */
+/* My Projects */
+
+#projects h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.project {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-list img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.project h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
